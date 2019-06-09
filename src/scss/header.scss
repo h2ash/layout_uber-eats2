@@ -1,0 +1,182 @@
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 72px;
+
+  background: green;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 8px;
+
+  box-sizing: border-box;
+  width: 970px;
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo__img {
+    max-width: 120px;
+    min-width: 105px;
+  }
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+
+  &__time {
+    position: relative; /*чтоб другие элементы могли опереться*/
+  }
+
+  &__time-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 65px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+
+    background-color: #fff;
+
+    cursor: pointer;
+
+    transition: border-color 0.4s;
+
+  }
+  
+  &__time-button:hover {
+    border-color: #8a8a8a;
+  }
+
+  &__time-select {
+    display: none; /*скрыли блок выпадающего меню*/
+    position: absolute;
+
+    min-width: 150px;
+
+    background: #fff;
+    box-shadow: 0 0 13px rgba(38, 38, 38, 0.16);
+
+    cursor: pointer;
+  }
+
+  &__time:hover &__time-select { /*показываем выпадающий при наведении блок вариантов*/
+    display: block;
+  }
+
+  &__time-select a { /*декорируем пункты выпадающего блока*/
+    display: block;
+    padding: 12px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: all 0.2s;
+  }
+
+  &__time-select a:hover {
+    background: #F5F5F5;
+  }
+
+  &__text {
+    color: #626262;
+    margin: 0 7px;
+  }
+
+  &__location {
+    box-sizing: border-box;
+
+    width: 292px;
+    height: 40px;
+
+    padding: 8px 10px 8px 36px;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+
+    background: url("images/location.svg") 12px center no-repeat;
+
+    transition: border-color 0.4s;
+  }
+
+  &__location:hover {
+    border-color: #8a8a8a;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    box-sizing: border-box;
+
+    width: 80px;
+    height: 40px;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    outline: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+    
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  &__button:first-child { /*отступ между sign in и register*/
+    margin-right: 15px;
+  }
+
+  &__white {
+    color: #262626;
+    background: #fff;
+  }
+
+  &__black {
+    background: #262626;
+    color: #fff;
+  }
+
+  &__button:hover {
+    color: #fff;
+    background: #57ad57;
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: center;
+  
+    background: none;
+    border: none;
+    margin: 0 0 0 15px;
+  
+    cursor: pointer;
+
+    transition: opacity 0.3s;
+  }
+
+  &__cart:hover {
+    opacity: 0.6;
+  }
+}
+
