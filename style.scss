@@ -4,6 +4,40 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.uber-eats {
+  width: 100%;
+}
+
 @import "scss/header.scss";
 @import "scss/main.scss";
 @import "scss/footer.scss";
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .header {
+    .logo {
+      &__img {
+        width: 100px;
+      }
+    }
+  }
+  
+
+
+  .delivery {
+    font-size: 13px;
+
+    &__time-button {
+      width: 57px;
+    }
+
+    &__location {
+      width: 215px;
+    }
+  }
+
+  .main {
+    &__catalog {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

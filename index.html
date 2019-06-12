@@ -13,52 +13,45 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+  <header id="wrapper"> 
+    <div class="header">
+      <div class="logo">
+        <a href=""><img class="logo__img" src="images/logo.png" alt="logo uber eats"></a>
+      </div>
 
-  <header id="wrapper">
-        <div class="header">
-
-          <div class="logo">
-            <a href="">
-              <img 
-                class="logo__img"
-                src="images/logo.png" 
-                alt="logo uber eats">
-            </a>
+      <form class="delivery" action="">
+        <div class="delivery__time">
+          <buttom class="delivery__time-button">ASAP</buttom>
+          <div class="delivery__time-select">
+            <a href="#">ASAP</a>
+            <a href="#">other time</a>
           </div>
-
-          <form class="delivery" action="">
-
-            <div class="delivery__time">
-              <buttom class="delivery__time-button">ASAP</buttom>
-              <div class="delivery__time-select">
-                <a href="#">ASAP</a>
-                <a href="#">other time</a>
-              </div>
-            </div>
-
-            <span class="delivery__text">to</span> 
-
-            <input  class="delivery__location" 
-                    type="text"
-                    value="3B, Lva Tolstogo str">
-
-          </form>
-
-          <div class="header-buttons">
-            <button class="header-buttons__button header-buttons__white">
-              Sign In
-            </button>
-            <button class="header-buttons__button header-buttons__black">
-              Register
-            </button>
-
-            <button class="header-buttons__cart">
-              <img src="images/cart.png" alt="icon cart button">
-            </button>
-          </div>
-
         </div>
+
+        <span class="delivery__text">to</span> 
+
+        <input  class="delivery__location" 
+                type="text"
+                value="3B, Lva Tolstogo str">
+
+      </form>
+
+      <div class="header-buttons">
+        <button class="header-buttons__button header-buttons__white">
+          Sign In
+        </button>
+        <button class="header-buttons__button header-buttons__black">
+          Register
+        </button>
+
+        <button class="header-buttons__cart">
+          <img src="images/cart.png" alt="icon cart button">
+        </button>
+      </div>
+
+    </div>
   </header>
 
   <main>
@@ -69,7 +62,7 @@
                 class="main__search-field-restaurant"
                 placeholder="Search for restaurants">
       </form>
-      
+
       <form class="main-delivery" action="">
 
         <span class="main-delivery__text">When</span> 
@@ -89,73 +82,74 @@
                 value="3B, Lva Tolstogo str">
 
       </form>
+      
 
       <h1 class="main__title">Киевские рестораны</h1>
     
       <div class="main__catalog">
-          <article class="card">
-              <a href="#"><img src="./images/1.png" alt="fast food" class="card__picture"></a>
-              <div class="card__title">Макдоналдс</div>
-              <div class="card__tags">₴₴ • Бургеры</div>
-              <div class="card__time">25-35 Min</div>
-          </article>
-      
-          <article class="card">
-            <a href="#"><img src="./images/2.png" alt="asian food" class="card__picture"></a>
-            <div class="card__title">WOKWEI</div>
-            <div class="card__tags">₴ • Китайская • Азиатская</div>
-            <div class="card__time">40-50 Min</div>
-          </article>
-      
-          <article class="card">
-            <a href="#"><img src="./images/3.png" alt="street food" class="card__picture"></a>
-            <div class="card__title">YIZHA</div>
-            <div class="card__tags">₴₴ • Американская • Бургеры • Уличная еда</div>
-            <div class="card__time">35-45 Min</div>
-          </article>
-      
-          <article class="card">
-            <a href="#"><img src="./images/4.png" alt="Near East food" class="card__picture"></a>
-            <div class="card__title">Musafir (ул. Саксаганского)</div>
-            <div class="card__tags">₴₴ • Близковосточная</div>
-            <div class="card__time">30-40 Min</div>
-          </article>
-      
-          <article class="card">
-            <a href="#"><img src="./images/5.png" alt="asian food" class="card__picture"></a>
-            <div class="card__title">НЯ-NHA</div>
-            <div class="card__tags">₴ • Китайская • Азиатская</div>
-            <div class="card__time">40-50 Min</div>
-          </article>
-      
-          <article class="card">
-            <a href="#"><img src="./images/6.png" alt="dessert" class="card__picture"></a>
-            <div class="card__title">Milk Bar</div>
-            <div class="card__tags">₴₴ • Десерты • Европейская</div>
+        <article class="card">
+            <a href="#"><img src="./images/1.png" alt="fast food" class="card__picture"></a>
+            <div class="card__title">Макдоналдс</div>
+            <div class="card__tags">₴₴ • Бургеры</div>
             <div class="card__time">25-35 Min</div>
-          </article>
+        </article>
       
-          <article class="card">
-            <a href="#"><img src="./images/7.png" alt="pizza" class="card__picture"></a>
-            <div class="card__title">Mimosa Brooklyn Pizza</div>
-            <div class="card__tags">₴₴ • Итальянская • Пицца • Американская</div>
-            <div class="card__time">15-25 Min</div>
-          </article>
+        <article class="card">
+          <a href="#"><img src="./images/2.png" alt="asian food" class="card__picture"></a>
+          <div class="card__title">WOKWEI</div>
+          <div class="card__tags">₴ • Китайская • Азиатская</div>
+          <div class="card__time">40-50 Min</div>
+        </article>
       
-          <article class="card">
-            <a href="#"><img src="./images/8.png" alt="asian food" class="card__picture"></a>
-            <div class="card__title">To Be</div>
-            <div class="card__tags">₴₴ • Японская • Азиатская • Суши</div>
-            <div class="card__time">25-35 Min</div>
-          </article>
+        <article class="card">
+          <a href="#"><img src="./images/3.png" alt="street food" class="card__picture"></a>
+          <div class="card__title">YIZHA</div>
+          <div class="card__tags">₴₴ • Американская • Бургеры • Уличная еда</div>
+          <div class="card__time">35-45 Min</div>
+        </article>
       
-          <article class="card">
-            <a href="#"><img src="./images/9.png" alt="european food" class="card__picture"></a>
-            <div class="card__title">Druzi Cafe (ул. Прорезная)</div>
-            <div class="card__tags">₴₴ • Американская • Современная европейская</div>
-            <div class="card__time">30-40 Min</div>
-          </article>
-        </div>
+        <article class="card">
+          <a href="#"><img src="./images/4.png" alt="Near East food" class="card__picture"></a>
+          <div class="card__title">Musafir (ул. Саксаганского)</div>
+          <div class="card__tags">₴₴ • Близковосточная</div>
+          <div class="card__time">30-40 Min</div>
+        </article>
+      
+        <article class="card">
+          <a href="#"><img src="./images/5.png" alt="asian food" class="card__picture"></a>
+          <div class="card__title">НЯ-NHA</div>
+          <div class="card__tags">₴ • Китайская • Азиатская</div>
+          <div class="card__time">40-50 Min</div>
+        </article>
+      
+        <article class="card">
+          <a href="#"><img src="./images/6.png" alt="dessert" class="card__picture"></a>
+          <div class="card__title">Milk Bar</div>
+          <div class="card__tags">₴₴ • Десерты • Европейская</div>
+          <div class="card__time">25-35 Min</div>
+        </article>
+      
+        <article class="card">
+          <a href="#"><img src="./images/7.png" alt="pizza" class="card__picture"></a>
+          <div class="card__title">Mimosa Brooklyn Pizza</div>
+          <div class="card__tags">₴₴ • Итальянская • Пицца • Американская</div>
+          <div class="card__time">15-25 Min</div>
+        </article>
+      
+        <article class="card">
+          <a href="#"><img src="./images/8.png" alt="asian food" class="card__picture"></a>
+          <div class="card__title">To Be</div>
+          <div class="card__tags">₴₴ • Японская • Азиатская • Суши</div>
+          <div class="card__time">25-35 Min</div>
+        </article>
+      
+        <article class="card">
+          <a href="#"><img src="./images/9.png" alt="european food" class="card__picture"></a>
+          <div class="card__title">Druzi Cafe (ул. Прорезная)</div>
+          <div class="card__tags">₴₴ • Американская • Современная европейская</div>
+          <div class="card__time">30-40 Min</div>
+        </article>
+      </div>
     </div>
   </main>
 

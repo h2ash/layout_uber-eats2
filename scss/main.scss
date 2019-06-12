@@ -1,6 +1,7 @@
 .main {
   margin: 16px auto 100px;
   max-width: 966px;
+  padding: 0 6px;
 
   &__search-field {
     display: flex;
@@ -18,7 +19,7 @@
     line-height: 24px;
     font-size: 16px;
 
-    background-image: url(/src/images/loupe.png);
+    background-image: url(/images/loupe.png);
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: left 5px top 16px;
@@ -36,7 +37,7 @@
     display: grid;
     grid-template-columns: repeat(3, 308px);
     grid-gap: 36px 16px;
-    justify-content: center;
+    justify-content: stretch;
 
   }
 }
@@ -138,6 +139,8 @@
 }
 
 .card {
+  
+
   &__picture {
     margin-bottom: 16px;
     border: 1px solid #48CD96;
