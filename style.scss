@@ -37,7 +37,42 @@ body {
 
   .main {
     &__catalog {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(304px, 1fr));
+      justify-content: stretch;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .delivery {
+    display: none;
+  }
+
+  .header-buttons {
+    &__button {
+      width: 72px;
+    }
+
+    &__button:first-child {
+      margin-right: 12px;
+    }
+
+    &__cart {
+    display: none;
+    }
+  }
+
+  .main {
+    &__catalog {
+      grid-template-columns: minmax(304px, 1fr);
+    }
+
+    &__search-field {
+      margin-bottom: 24px;
+    }
+  }
+
+  .main-delivery {
+    display: grid;
   }
 }

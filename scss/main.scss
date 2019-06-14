@@ -1,7 +1,7 @@
 .main {
   margin: 16px auto 100px;
   max-width: 966px;
-  padding: 0 6px;
+  padding: 0 8px;
 
   &__search-field {
     display: flex;
@@ -27,7 +27,7 @@
     border: none;
   }
   &__title {
-    margin-bottom: 16px;
+    margin: 40px 0 16px 0;
     font-weight: normal;
     font-size: 22px;
     line-height: 34px;
@@ -35,16 +35,16 @@
 
   &__catalog {
     display: grid;
-    grid-template-columns: repeat(3, 308px);
+    grid-template-columns: repeat(3, 304px);
     grid-gap: 36px 16px;
-    justify-content: stretch;
+    justify-content: center;
 
   }
 }
 
-.main-delivery { /*исправить для мобильной версии---МОБИЛЬНАЯ ВЕРСИЯ*/ 
+.main-delivery { /*МОБИЛЬНАЯ ВЕРСИЯ*/ 
   display: none; /*временно скрыли*/
-  grid-template-columns: 65px 227px;
+  grid-template-columns: 65px, 227px;
   grid-template-rows: 13px 40px;
   grid-gap: 15px 16px;
   grid-auto-flow: column;
@@ -120,7 +120,7 @@
   &__location {
     box-sizing: border-box;
 
-    width: 292px;
+    width: 227px;
     height: 40px;
 
     padding: 8px 10px 8px 36px;
@@ -140,8 +140,8 @@
 
 .card {
   
-
   &__picture {
+    width: 100%;
     margin-bottom: 16px;
     border: 1px solid #48CD96;
   }
